@@ -1,0 +1,301 @@
+.value-style{
+  text-align: center;
+  font-weight: bold;
+}
+.box-style{
+  background-color:white;
+  padding:20px;
+}
+.col-style{
+  margin:1px;
+}
+/* CARDS PAGE STYLE */
+a { color: inherit; } 
+.u-center-text {
+    text-align: center !important;
+  }
+  
+  .u-margin-bottom-small {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .u-margin-bottom-medium {
+    margin-bottom: 4rem !important;
+  }
+  
+  .u-margin-top-big {
+    margin-top: 5rem !important;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    /* font-weight: 400; */
+    /* line-height: 1.7; */
+    
+    background: #fff;
+  }
+  
+  .heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    margin-bottom: 6rem;
+  }
+  
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    -webkit-animation-name: moveInLeft;
+            animation-name: moveInLeft;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    /*
+          animation-delay: 3s;
+          animation-iteration-count: 3;
+          */
+  }
+  
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    -webkit-animation: moveInRight 1s ease-out;
+            animation: moveInRight 1s ease-out;
+  }
+  
+  .heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    line-height: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #eee;
+  }
+
+/*   
+  html {
+    font-size: 62.5%;
+  }
+   */
+  /* body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  } */
+  
+  .section-plans {
+    font-size: 62.5%;
+    background-color: #fff;
+    padding: 4rem 0 4rem 0;
+  }
+  
+  .card {
+    -webkit-perspective: 150rem;
+            perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 38rem;
+  }
+ 
+  .card__side {
+    height: 38rem;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .card__side--front {
+    background-color: #fff;
+  }
+  
+  .card__side--front-1 {
+    background: linear-gradient(-45deg, #229b04, #8bf5a2);
+  }
+  .card__side--front-1:hover{
+    transition-delay:3s;
+    background: linear-gradient(-45deg, #b618ae,#f19ded);
+  }
+
+  .card__side--front-2 {
+    background: linear-gradient(-45deg,#0c8c91, #65e3e7 );
+  }
+
+  .card__side--front-2:hover{
+    transition-delay:3s;
+    background: linear-gradient(-45deg, #b618ae,#f19ded);
+  }
+  .card__side--front-3 {
+    background: linear-gradient(-45deg, #117de2, #8ec5f8);
+  }
+  
+  .card__side--front-3:hover{
+    transition-delay:3s;
+    background: linear-gradient(-45deg, #b618ae,#f19ded);
+  }
+  .card__side--back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+  .card__side--front-4 {
+    background: linear-gradient(-45deg, #d81f1f, #f38686);
+  }
+  .card__side--front-4:hover{
+    transition-delay:3s;
+    background: linear-gradient(-45deg, #b618ae,#f19ded);
+  }
+
+  .card__side--front-5 {
+    background: linear-gradient(-45deg, #8f5806, #f0bf77);
+  }
+  .card__side--front-5:hover{
+    transition-delay:3s;
+    background: linear-gradient(-45deg, #b618ae,#f19ded);
+  }
+
+  .card__side--front-6 {
+    background: linear-gradient(-45deg, #2c2a2c, #a09ea0);
+  }
+  .card__side--front-6:hover{
+    transition-delay:3s;
+    background: linear-gradient(-45deg, #b618ae,#f19ded);
+  }
+
+
+  .card__title {
+    height: 20rem;
+    padding: 4rem 2rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .card__title--1 .fas {
+    font-size: 5rem;
+  }
+  
+  .card__title--2 .fas {
+    font-size: 5rem;
+  }
+  
+  .card__title--3 .fas {
+    font-size: 5rem;
+  }
+  
+  .card__heading {
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    width: 75%;
+  }
+  
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  
+  .card__details {
+    padding: 0 2rem 2rem;
+  }
+  
+  .card__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .card__details ul li {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .card__details ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem;
+  }
+  
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+  
+  .row-card {
+    color:#fff;
+    max-width: 114rem;
+    margin: 0 auto;
+  }
+  
+  .row-card:not(:last-child) {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+  
+  .row-card::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .row-card [class^="col-"] {
+    float: left;
+  }
+  
+  .row-card [class^="col-"]:not(:last-child) {
+    margin-right: 6rem;
+  }
+  
+  .row-card .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3);
+  }
+  
