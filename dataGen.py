@@ -37,7 +37,7 @@ df['TotalProfit']=df['TotalPrice']-df['TotalCost']-df['Discount']
 print('PROFITS CREATED')
 
 print('SAVING DATA...')
-pd.to_csv('data/genData.csv')
+df.to_csv('data/genData.csv')
 print('SAVED')
 # d1 = datetime.strptime('1/1/2005 1:30 PM', '%m/%d/%Y %I:%M %p')
 # d2 = datetime.strptime('1/1/2021 4:50 AM', '%m/%d/%Y %I:%M %p')
