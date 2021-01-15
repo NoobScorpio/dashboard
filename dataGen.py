@@ -10,14 +10,35 @@ import pandas as pd
 
 
 
+print('STARTED')
+
 df = pd.read_csv('data/genData.csv')
+print('DATA OPENED')
+
+df['InvoiceDate']=pd.to_datetime(df['InvoiceDate'])
+print('CONVERTED TO DATES')
+
 df['Year']=df['InvoiceDate'].dt.year
+print('YEARS CREATED')
+
 df['Month']=df['InvoiceDate'].dt.month
+print('MONTHS CREATED')
+
 df['Day']=df['InvoiceDate'].dt.day
+print('DAYS CREATED')
+
 df['TotalCost']=df['Cost']*df['Qnty']
+print('COSTS CREATED')
+
 df['TotalPrice']=df['Price']*df['Qnty']
+print('PRICES CREATED')
+
 df['TotalProfit']=df['TotalPrice']-df['TotalCost']-df['Discount']
+print('PROFITS CREATED')
+
+print('SAVING DATA...')
 pd.to_csv('data/genData.csv')
+print('SAVED')
 # d1 = datetime.strptime('1/1/2005 1:30 PM', '%m/%d/%Y %I:%M %p')
 # d2 = datetime.strptime('1/1/2021 4:50 AM', '%m/%d/%Y %I:%M %p')
 
